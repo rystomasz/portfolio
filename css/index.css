@@ -1,18 +1,25 @@
+*{
+    margin: 0;
+}
 html{
 
     scroll-behavior:    smooth;
+    font-size:          20px;
+    font-family:        "Poppins",Arial, Helvetica, sans-serif;
+      
+    margin:             0;
+    padding:            0;
 }
 body{
         /* #041b35; */
         background-color:   #ffffff;
-        font-family:        "Poppins",Arial, Helvetica, sans-serif;
-        font-size:          20px;
-        margin:             0;
-        padding:            0;
+
 }
+
 /* 
 navbar
 */
+
 #navbar{
     background-color:     rgb(255, 255, 255);
     box-shadow:             0 10px 10px -5px rgb(0,0,0,.1);
@@ -23,30 +30,37 @@ navbar
     width:                  100%;
     position:               sticky;
     top:                    0;
+    z-index:                1;
 
 }
 #navbar ul{
+    
     display:            flex;
     justify-content:    space-evenly;
     margin:             .4rem 0 .4rem auto;
     list-style:         none;
+    padding:            0;
     width:              50%;
 
 }
 #navbar ul li >a{
     color:            #041b35;
-    font-size:          1.5rem;
+    font-size:          2vh;
     font-family:        "Poppins", Arial, Helvetica, sans-serif;
     font-weight:        200;
-    margin:             0 0 0 .2rem;
+    margin:             0 0 0 .8rem;
     text-decoration:    none;
 
 }
 #navbar ul li >a:hover{
 color:         orangered;
-transition:     all .3s ;
+}
 
-
+#navbar ul li::first-letter{
+    color:          orangered;
+    font-size: 1.2rem;
+    font-weight:      bolder;
+   
 }
 /* 
 end navbar
@@ -57,11 +71,91 @@ section start
 */
 #start{
  
+ 
     background:         no-repeat center center fixed;
-    background-image:   linear-gradient(to right, rgb(253, 253, 253) 30%,rgba(255, 255, 255, 0.795) 100%), url("/img/start.jpg") ;
+    background-image:   linear-gradient(to right, rgb(253, 253, 253) 30%,rgba(255, 255, 255, 0.877) 100%), url("../img/start.jpg") ;
     background-size:    cover;
-    height:             40rem;
+    height:             30rem;
 }
+.quote h1{
+    
+    color:         #041b35;
+    
+    margin:         0 35rem 1rem 5rem;
+    font-size:      4vmin;
+    padding:        10rem 0 5rem 1rem;
+    
+    text-align:     justify;
+    text-indent:    4rem;
+    width:          55%;
+
+    
+}
+.quote h1 q{
+    font-weight:        bolder;
+    letter-spacing:     .2rem;
+    word-spacing:       .25rem;
+    
+}
+.quote h1 span{
+    font-size:          .9rem;
+
+    
+}
+.quote h1 q::selection{
+    color:          orangered;
+}
+h1 >span{
+    font-weight:        500;
+    font-style:         italic;
+}
+
+
+
 /* 
 end section start
+*/
+
+/* 
+section welcome
+*/
+
+#welcome{
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-evenly;
+    margin:             4rem;
+}
+
+.message{
+  
+    color:          #041b35;
+    display:            flex;
+    font-family:        "Poppins",Arial, Helvetica, sans-serif;
+    font-size:          4vmin;
+    justify-content:    center;
+    align-items:        center;
+    margin:              0 0 1rem 0;
+    text-align:         center;
+    
+ 
+}
+.message h2::first-letter{
+    color:      orange;
+}
+.message h2 span{
+    color:      orange;
+  
+  
+}
+.message img{
+    
+    border-radius:       1rem;
+    opacity:             .8;
+    width:               20rem;
+}
+
+/* End Welcome Section */
+/* 
+About Setion
 */
