@@ -23,7 +23,7 @@ navbar
 #navbar{
     background-color:     rgb(255, 255, 255);
     box-shadow:             0 10px 10px -5px rgb(0,0,0,.1);
-    height:                 3rem;
+    height:                 auto;
     left:                   0;
     margin:                 0;
     padding:                .25rem 0;
@@ -58,7 +58,7 @@ color:         orangered;
 
 #navbar ul li::first-letter{
     color:          orangered;
-    font-size: 1.2rem;
+    font-size:         3vh;
     font-weight:      bolder;
    
 }
@@ -75,7 +75,7 @@ section start
     background:         no-repeat center center fixed;
     background-image:   linear-gradient(to right, rgb(253, 253, 253) 30%,rgba(255, 255, 255, 0.877) 100%), url("../img/start.jpg") ;
     background-size:    cover;
-    height:             25rem;
+    height:             30rem;
 }
 .quote h1{
     
@@ -109,17 +109,8 @@ h1 >span{
     font-weight:        500;
     font-style:         italic;
 }
-
-
-
-/* 
-end section start
-*/
-
-/* 
-section welcome
-*/
-
+/* end section start*/
+/* section welcome*/
 #welcome{
     display:            flex;
     flex-wrap:          wrap;
@@ -155,7 +146,6 @@ section welcome
     opacity:             .8;
     max-width:            40vmin;
 }
-
 /* End Welcome Section */
 /* 
 About Setion
@@ -201,9 +191,7 @@ div.my-info{
     opacity:            .8;
 
 }
-/* 
-end About section
-*/
+/* end About section*/
 
 /* skils sections */
 
@@ -235,10 +223,7 @@ end About section
 .skills-name::selection{
 color:      #041b35;
 }
-
-/* 
-end skill section
-*/
+/* end skill section*/
 /* Projest Section */
 #projects-section{
     background-color:   #041b35;
@@ -248,19 +233,20 @@ end skill section
     display:            flex;
     flex-wrap:          wrap;
     justify-content:    center ;
+ 
 }
 .img-box{
     background-color:    #EB2413; 
-    border-radius: 10px;
-    box-shadow: -10px 10px 30px 2px black;
-    height:                 20rem;
-    margin:                 0 1rem 3rem 0;
+    border-radius:          10px;
+    box-shadow:             -10px 10px 30px 2px black;
+    height:                 auto;
+    margin:                 2rem 1.5rem 3rem 2rem;
     text-align:             center;
     width:                  25%;
     
 }
 .img-box:hover{
-    transform: scale(1.7);
+    transform: scale(1.5);
     transition: all 1s ease-in-out;
  
 }
@@ -271,9 +257,20 @@ end skill section
 
 .description{
     color:          white;
-    font-size:        4vmin;
+    font-size:        3vmin;
     font-weight:      200;
     text-align:       center;
+    margin-bottom:    1rem;
+
+}
+.description ul li{
+    font-size:      2.5vmin;
+    color:        #041b35;
+    text-align:     left;
+}
+.warning{
+    font-size: 1vmin;
+    color: #aaeb13;
 }
 .img-box a{
     color:            #041b35;
@@ -287,3 +284,31 @@ end skill section
     transition:       all 1s ease-in-out;
 }
 /* End Project section */
+
+#contact-section{
+
+    text-align: center;
+}
+#contact-section i{
+    margin: 1rem 2rem 3rem 0;
+    color: #041b35;
+}
+#contact-section p{
+    font-weight: 200;
+}
+#contact-section a :hover{
+color: orangered;
+}
+#contact-section  .description{
+color: #041b35;
+}
+.update-h1{
+    color:         #041b35 ;
+    margin:         2rem;
+    word-spacing:   1.5rem;
+}
+
+
+ /* Contact section */
+
+ /* End Conatct */
